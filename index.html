@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Class</title>
+</head>
+
+<body>
+    <style>
+        p {
+            font-size: 25px;
+        }
+    </style>
+    <main>
+        <div id="main-container">
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam perspiciatis obcaecati harum similique
+                expedita voluptatibus laudantium reiciendis quia magnam, debitis consequuntur excepturi velit voluptas
+                hic
+                facere nobis iure aut quidem aliquam deserunt corrupti sit saepe. Velit fugit sint debitis temporibus
+                sapiente numquam quos molestiae! Eveniet molestias laborum eligendi facilis accusamus?</P>
+            <P>Quaerat deserunt quibusdam laboriosam eos, praesentium, sapiente, maiores optio reiciendis illo suscipit
+                dignissimos non nesciunt deleniti fugit totam in quia! Maxime commodi sed soluta saepe dolorum, nobis
+                obcaecati nemo quasi laudantium accusantium amet rem neque, distinctio nisi totam, repellat placeat
+                debitis
+                reprehenderit ullam? Quos itaque mollitia facere veritatis repudiandae possimus.</P>
+            <P>Repudiandae, corrupti. Excepturi, id, aspernatur dolore nemo consequuntur numquam assumenda veritatis
+                ullam
+                aliquid magnam modi architecto dolorum expedita quaerat reiciendis possimus hic natus sequi itaque qui.
+                Expedita aliquid adipisci optio eius quibusdam dicta alias saepe laborum? Quidem deleniti cum numquam
+                minima
+                tempora quia distinctio excepturi praesentium exercitationem! Labore, libero ut?</P>
+            <P>Ea cumque voluptas, vitae explicabo perferendis facere incidunt sit ullam maxime sint commodi sapiente
+                minus
+                sed laudantium ex quae repudiandae velit quaerat. Repellat, porro eaque quasi quidem quam officiis
+                doloremque cum quia, dignissimos excepturi dolor. Similique commodi, deserunt quos necessitatibus aut
+                sed
+                dicta voluptates nobis mollitia? Repellat veritatis deleniti provident.</P>
+            <textarea name="" id="new-comment" cols="60" rows="10"></textarea>
+            <br>
+            <button id="button-post">Comment Added</button>
+        </div>
+    </main>
+
+
+
+
+    <script>
+        document.getElementById('button-post').addEventListener('click', function () {
+            const commentBox = document.getElementById('new-comment');
+            const newComment = commentBox.value;
+
+            const commentContainer = document.getElementById('main-container');
+            const p = document.createElement('p');
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+
+            commentBox.value = '';
+        })
+
+
+    </script>
+    <script src="js/new.js"></script>
+</body>
+
+</html>
